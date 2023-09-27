@@ -1,4 +1,40 @@
-.order-data{
-    border: solid 1px gray;
-    height: 100rem;
+.order-data {
+  border: solid 1px gray;
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.head {
+  display: flex;
+  width: 100%;
+  height: 2rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.search {
+  width: 50%;
+}
+input {
+  padding-left: 1rem;
+  width: 60%;
+  height: 2rem;
+  border-radius: 20px;
+  border: 1.2px solid gray;
+}
+
+.add-item {
+  width: 5rem;
+}
+
+.add-print {
+  display: flex;
+  align-items: center;
+}
+
+.print {
+  margin-left: 2rem;
+  color: rgb(39, 80, 60);
 }
