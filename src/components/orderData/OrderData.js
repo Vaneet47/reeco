@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchData, updateStatus } from './orderDataSlice';
+
 import './orderData.css';
 
 function OrderData() {
-  const [data, setData] = useState([]);
   const [crossPopup, setCrossPopup] = useState(false);
   const [id, setId] = useState(null);
 
-  const getData = () => {
-    fetch('data.json')
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-        console.log(data);
-      });
+  const data = useSelector((state) => state.orderData.orderData);
+  const dispatch = useDispatch();
 
-    // store all this data in redux
+  const getData = () => {
+    dispatch(fetchData());
   };
 
   useEffect(() => {
@@ -24,12 +22,10 @@ function OrderData() {
   const handleCross = (id) => {
     setCrossPopup(true);
     setId(id);
-    console.log(id);
   };
 
   const handleDone = (id) => {
-    console.log(id);
-    // update redux store
+    dispatch(updateStatus({ id, status: 'Approved' }));
   };
 
   const closePopup = () => {
@@ -38,11 +34,13 @@ function OrderData() {
   };
 
   const handleNo = () => {
-    // update redux store
+    dispatch(updateStatus({ id, status: 'Missing' }));
+    setCrossPopup(false);
   };
 
   const handleYes = () => {
-    // update redux store
+    dispatch(updateStatus({ id, status: 'Missing-Urgent' }));
+    setCrossPopup(false);
   };
 
   return (
@@ -90,7 +88,7 @@ function OrderData() {
                   </td>
                   <td>
                     <span
-                      className={`material-symbols-outlined icon-cta ${item.status}`}
+                      className={`material-symbols-outlined icon-cta done-${item.status}`}
                       onClick={() => {
                         handleDone(item.id);
                       }}
@@ -100,7 +98,7 @@ function OrderData() {
                   </td>
                   <td>
                     <span
-                      className='material-symbols-outlined icon-cta'
+                      className={`material-symbols-outlined icon-cta close-${item.status}`}
                       onClick={() => {
                         handleCross(item.id);
                       }}

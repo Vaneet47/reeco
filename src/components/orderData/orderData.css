@@ -79,8 +79,22 @@ img {
   background-color: rgb(83, 221, 83);
 }
 
-.Approved {
+.done-Approved {
   color: rgb(83, 221, 83);
+}
+.status-Missing {
+  background-color: orangered;
+}
+
+.close-Missing {
+  color: orangered;
+}
+.status-Missing-Urgent {
+  background-color: red;
+}
+
+.close-Missing-Urgent {
+  color: red;
 }
 
 .cross-popup {
@@ -125,4 +139,5 @@ img {
   font-weight: 900;
   margin-left: 2rem;
   border: none;
+  cursor: pointer;
 }

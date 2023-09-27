@@ -15,7 +15,7 @@
     "price": "10",
     "quantity": "15",
     "total": "150",
-    "status": "Approved"
+    "status": null
   },
   {
     "id": 2,
