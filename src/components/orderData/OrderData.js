@@ -145,9 +145,9 @@ function OrderData() {
                   </td>
                   <td>{item.productName}</td>
                   <td>{item.brand}</td>
-                  <td>{item.price}</td>
+                  <td>${item.price}</td>
                   <td>{item.quantity}</td>
-                  <td>{item.total}</td>
+                  <td>${item.total}</td>
                   <td className='backg'>
                     <div className={`status status-${item.status}`}>
                       {item.status}
@@ -232,7 +232,7 @@ function OrderData() {
                 </div>
                 <div className='edit-inputs'>
                   <p>Total</p>
-                  <p>{newPrice * newQuantity}</p>
+                  <p>${newPrice * newQuantity}</p>
                 </div>
               </div>
             </div>

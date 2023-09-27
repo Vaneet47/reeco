@@ -21,9 +21,26 @@ export const orderDataSlice = createSlice({
     updateData: (state, action) => {
       let id = action.payload['id'];
       let nStatus = action.payload['status'];
-      let nPrice = action.payload['price'] || state.orderData[id].price;
-      let nQuantity = action.payload['quantity'] || state.orderData[id].quantity;
-      let nTotal = action.payload['total'] || state.orderData[id].total;
+      let nPrice;
+      let nQuantity;
+      let nTotal;
+
+      if (!(action.payload['price'] || action.payload['price'] === 0)) {
+        nPrice = state.orderData[id].price;
+      } else {
+        nPrice = action.payload['price'];
+      }
+      if (!(action.payload['quantity'] || action.payload['quantity'] === 0)) {
+        nQuantity = state.orderData[id].quantity;
+      } else {
+        nQuantity = action.payload['quantity'];
+      }
+      if (!(action.payload['total'] || action.payload['total'] === 0)) {
+        nTotal = state.orderData[id].total;
+      } else {
+        nTotal = action.payload['total'];
+      }
+      
       state.orderData[id].status = nStatus;
       state.orderData[id].price = nPrice;
       state.orderData[id].quantity = nQuantity;
