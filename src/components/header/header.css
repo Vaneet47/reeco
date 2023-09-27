@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-nav {
+  padding-left: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+p {
+  display: inline-block;
+}
+
+.order {
+  text-decoration: underline;
+}
+
+.order-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.order-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cta {
+  width: 13rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  height: 1.8rem;
+  border-radius: 20px;
+}
+
+.back {
+  width: 4rem;
+  color: rgb(39, 80, 60);
+  border-color: rgb(39, 80, 60);
+}
+
+.approve-order {
+  color: white;
+  width: 8rem;
+  background-color: rgb(39, 80, 60);
+}
