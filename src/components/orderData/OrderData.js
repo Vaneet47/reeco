@@ -81,12 +81,12 @@ function OrderData() {
                   <td>{item.price}</td>
                   <td>{item.quantity}</td>
                   <td>{item.total}</td>
-                  <td>
+                  <td className='backg'>
                     <div className={`status status-${item.status}`}>
                       {item.status}
                     </div>
                   </td>
-                  <td>
+                  <td className='backg'>
                     <span
                       className={`material-symbols-outlined icon-cta done-${item.status}`}
                       onClick={() => {
@@ -96,7 +96,7 @@ function OrderData() {
                       done
                     </span>
                   </td>
-                  <td>
+                  <td className='backg'>
                     <span
                       className={`material-symbols-outlined icon-cta close-${item.status}`}
                       onClick={() => {
@@ -106,7 +106,7 @@ function OrderData() {
                       close
                     </span>
                   </td>
-                  <td className='edit-cta'>edit</td>
+                  <td className='edit-cta backg'>edit</td>
                 </tr>
               );
             })}
