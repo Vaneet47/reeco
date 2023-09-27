@@ -1,6 +1,5 @@
 .order-data {
   border: solid 1px gray;
-  height: 100rem;
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -37,4 +36,21 @@ input {
 .print {
   margin-left: 2rem;
   color: rgb(39, 80, 60);
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th{
+  font-weight: 300;
 }

@@ -3,5 +3,5 @@
   flex-direction: column;
   padding-left: 8rem;
   padding-right: 8rem;
-  overflow: scroll;
+  overflow-y: scroll;
 }

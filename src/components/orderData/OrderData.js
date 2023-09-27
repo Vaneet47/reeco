@@ -14,7 +14,38 @@ function OrderData() {
         </div>
       </div>
 
-      <div>Table</div>
+      <div>
+        <table>
+          <tr>
+            <th></th>
+            <th>Product name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>right</th>
+            <th>wrong</th>
+            <th>edit</th>
+          </tr>
+          <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+            <td>Peter</td>
+            <td>
+              <span class='material-symbols-outlined'>done</span>
+            </td>
+            <td>
+              <span class='material-symbols-outlined'>close</span>
+            </td>
+            <td>edit</td>
+          </tr>
+        </table>
+      </div>
     </div>
   );
 }
