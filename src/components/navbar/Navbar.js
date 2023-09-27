@@ -12,11 +12,11 @@ function Navbar() {
       </div>
 
       <div className='profile'>
-        <span class='material-symbols-outlined'>shopping_cart</span>
+        <span className='material-symbols-outlined'>shopping_cart</span>
         <p>
           Hello,
-          <select>
-            <option selected>James</option>
+          <select defaultValue='James'>
+            <option>James</option>
             <option>Jones</option>
             <option>Bond</option>
           </select>

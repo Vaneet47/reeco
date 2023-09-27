@@ -21,20 +21,20 @@ function OrderInfo() {
           <div className='heading'>Category</div>
           <div className='icons'>
             <div className='row1'>
-              <span class='material-symbols-outlined icon'>
+              <span className='material-symbols-outlined icon'>
                 restaurant_menu
               </span>
-              <span class='material-symbols-outlined icon'>restaurant</span>
-              <span class='material-symbols-outlined icon'>ac_unit</span>
-              <span class='material-symbols-outlined icon'>water</span>
+              <span className='material-symbols-outlined icon'>restaurant</span>
+              <span className='material-symbols-outlined icon'>ac_unit</span>
+              <span className='material-symbols-outlined icon'>water</span>
             </div>
             <div className='row2'>
-              <span class='material-symbols-outlined icon'>nights_stay</span>
-              <span class='material-symbols-outlined icon'>
+              <span className='material-symbols-outlined icon'>nights_stay</span>
+              <span className='material-symbols-outlined icon'>
                 devices_wearables
               </span>
-              <span class='material-symbols-outlined icon'>mode_dual</span>
-              <span class='material-symbols-outlined icon'>storm</span>
+              <span className='material-symbols-outlined icon'>mode_dual</span>
+              <span className='material-symbols-outlined icon'>storm</span>
             </div>
           </div>
         </div>

@@ -41,13 +41,10 @@ p {
   justify-content: space-between;
 }
 
-button {
+.back {
   height: 1.8rem;
   border-radius: 20px;
   font-weight: 800;
-}
-
-.back {
   width: 4rem;
   color: rgb(39, 80, 60);
   background-color: white;
@@ -55,6 +52,9 @@ button {
 }
 
 .approve-order {
+  height: 1.8rem;
+  border-radius: 20px;
+  font-weight: 800;
   color: white;
   width: 8rem;
   background-color: rgb(39, 80, 60);

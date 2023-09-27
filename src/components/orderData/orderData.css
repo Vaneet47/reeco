@@ -51,6 +51,78 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-th{
+th {
   font-weight: 300;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+}
+
+.icon-cta {
+  width: 2.2rem;
+  cursor: pointer;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  height: 2rem;
+  border-radius: 20px;
+}
+
+.status-Approved {
+  background-color: rgb(83, 221, 83);
+}
+
+.Approved {
+  color: rgb(83, 221, 83);
+}
+
+.cross-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(204, 204, 204, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #eeeeee;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+}
+
+.close-button {
+  float: right;
+  width: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #eeeeee;
+}
+
+.dialog-title,
+.dialog-question {
+  margin-bottom: 2rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.buttons {
+  font-weight: 900;
+  margin-left: 2rem;
+  border: none;
 }
