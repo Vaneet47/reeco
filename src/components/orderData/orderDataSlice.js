@@ -18,11 +18,16 @@ export const orderDataSlice = createSlice({
   name: 'orderData',
   initialState,
   reducers: {
-    updateStatus: (state, action) => {
-      console.log(state, action.payload);
+    updateData: (state, action) => {
       let id = action.payload['id'];
-      let newStatus = action.payload['status'];
-      state.orderData[id].status = newStatus;
+      let nStatus = action.payload['status'];
+      let nPrice = action.payload['price'] || state.orderData[id].price;
+      let nQuantity = action.payload['quantity'] || state.orderData[id].quantity;
+      let nTotal = action.payload['total'] || state.orderData[id].total;
+      state.orderData[id].status = nStatus;
+      state.orderData[id].price = nPrice;
+      state.orderData[id].quantity = nQuantity;
+      state.orderData[id].total = nTotal;
     },
   },
   extraReducers: (builder) => {
@@ -42,6 +47,6 @@ export const orderDataSlice = createSlice({
   },
 });
 
-export const { updateStatus } = orderDataSlice.actions;
+export const { updateData } = orderDataSlice.actions;
 
 export default orderDataSlice.reducer;

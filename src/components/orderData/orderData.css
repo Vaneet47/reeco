@@ -78,6 +78,12 @@ img {
 .status-Approved {
   background-color: rgb(83, 221, 83);
 }
+.status-Price {
+  background-color: rgb(83, 221, 83);
+}
+.status-Quantity {
+  background-color: rgb(83, 221, 83);
+}
 
 .done-Approved {
   color: rgb(83, 221, 83);
@@ -142,7 +148,70 @@ img {
   cursor: pointer;
 }
 
-
-.backg{
+.backg {
   background-color: rgb(238, 236, 236);
+}
+
+.send-btn {
+  margin-left: 1rem;
+  height: 1.8rem;
+  border-radius: 20px;
+  font-weight: 800;
+  color: white;
+  width: 4rem;
+  background-color: rgb(39, 80, 60);
+}
+
+.edit-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.edit-image {
+  height: 120px;
+  width: 120px;
+}
+
+.r-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.reasons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.reasons {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  height: 2rem;
+  background-color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 20px;
+}
+
+.edit-popup-content {
+  background-color: #eeeeee;
+  padding: 1rem 1.5rem;
+  width: 35rem;
+}
+
+.edit-inputs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18rem;
+  margin-bottom: 0.5rem;
+}
+.optional{
+  font-size: 10px;
 }
